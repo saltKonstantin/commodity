@@ -14,7 +14,7 @@ This project provides a suite of Python scripts designed to automate the fetchin
 
 *   **Data Analysis (scripts in `analysis/` directory):**
     *   **`full_correlation_matrix.py`**: Calculates Pearson correlation coefficients for all possible pairs of commodity indicators found in the database, based on user-specified time windows or the maximum common history. Results are saved to `analysis/output/`.
-    *   **`dynamic_timeframe_correlation.py`**: Performs a true rolling 12-month window correlation analysis for a user-selected pair of indicators, providing insights into how their relationship evolves over time. Outputs both a CSV file of the rolling correlations and a visual plot (JPG) to `analysis/output/`.
+    *   **`dynamic_timeframe_correlation.py`**: Performs a true rolling 60-month window correlation analysis for a user-selected pair of indicators, providing insights into how their relationship evolves over time. Outputs both a CSV file of the rolling correlations and a visual plot (JPG) to `analysis/output/`.
 
 **Technology Stack:**
 
@@ -101,14 +101,14 @@ Located in the `analysis/` directory. These scripts use the data stored in `data
 
 ### `analysis/dynamic_timeframe_correlation.py`
 
-*   **Purpose**: Performs a true rolling 12-month window correlation analysis for a user-specified pair of indicators.
+*   **Purpose**: Performs a true rolling 60-month window correlation analysis for a user-specified pair of indicators.
 *   **How it Works**:
     1.  Prompts the user for two indicator codes.
     2.  Reads indicator info from `../database/commodity_indicators_list.txt`.
     3.  Fetches monthly data for the pair from `../database/imf_commodities.sqlite`.
-    4.  Calculates correlations for a 12-month window, sliding one month at a time through their common history.
-    5.  Saves the results to a CSV file in `analysis/output/` (e.g., `true_rolling_12m_correlation_CODE1_CODE2.csv`).
-    6.  Generates and saves a JPG plot of the rolling correlation to `analysis/output/` (e.g., `true_rolling_12m_correlation_CODE1_CODE2.jpg`).
+    4.  Calculates correlations for a 60-month window, sliding one month at a time through their common history.
+    5.  Saves the results to a CSV file in `analysis/output/` (e.g., `true_rolling_60m_correlation_CODE1_CODE2.csv`).
+    6.  Generates and saves a JPG plot of the rolling correlation to `analysis/output/` (e.g., `true_rolling_60m_correlation_CODE1_CODE2.jpg`).
 *   **Prerequisites**:
     *   `database/imf_commodities.sqlite` and `database/commodity_indicators_list.txt`.
     *   Python libraries: `pandas`, `matplotlib`. (Run `pip install matplotlib` if not installed).
@@ -118,8 +118,8 @@ Located in the `analysis/` directory. These scripts use the data stored in `data
     ```
     Or, navigate to `analysis/` and run `python dynamic_timeframe_correlation.py`.
 *   **Output**:
-    *   CSV file in `analysis/output/` (e.g., `true_rolling_12m_correlation_CODE1_CODE2.csv`).
-    *   JPG plot in `analysis/output/` (e.g., `true_rolling_12m_correlation_CODE1_CODE2.jpg`).
+    *   CSV file in `analysis/output/` (e.g., `true_rolling_60m_correlation_CODE1_CODE2.csv`).
+    *   JPG plot in `analysis/output/` (e.g., `true_rolling_60m_correlation_CODE1_CODE2.jpg`).
 
 
 ## Database Schema (`database/imf_commodities.sqlite`)
