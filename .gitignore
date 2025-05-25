@@ -1,0 +1,37 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment directories
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Log files
+*.log
+
+# Database files (if not intended for version control)
+*.sqlite
+*.sqlite3
+
+# Analysis output
+analysis/output/
+
+# OS-specific files
+.DS_Store
+Thumbs.db 
