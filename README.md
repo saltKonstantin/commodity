@@ -1,6 +1,27 @@
 # IMF Commodity Data Fetcher and Analyzer
 
-This project contains Python scripts to fetch commodity price data from the International Monetary Fund (IMF) API and perform correlation analyses on the collected data.
+This project provides a suite of Python scripts designed to automate the fetching of commodity price data from the International Monetary Fund (IMF) API, store it locally, and perform various correlation analyses.
+
+**Core Functionalities:**
+
+*   **Automated Data Acquisition (`main.py`):**
+    *   Connects to the IMF API to retrieve the latest Primary Commodity Price System (PCPS) data.
+    *   Parses and processes the data, handling different frequencies and units.
+    *   Stores structured data in an SQLite database (`database/imf_commodities.sqlite`).
+    *   Maintains metadata about available commodity indicators, including their descriptions.
+    *   Generates an updated list of active commodity indicators (`database/commodity_indicators_list.txt`).
+    *   Logs all operations for monitoring and troubleshooting (`database/imf_data_fetch.log`).
+
+*   **Data Analysis (scripts in `analysis/` directory):**
+    *   **`full_correlation_matrix.py`**: Calculates Pearson correlation coefficients for all possible pairs of commodity indicators found in the database, based on user-specified time windows or the maximum common history. Results are saved to `analysis/output/`.
+    *   **`dynamic_timeframe_correlation.py`**: Performs a true rolling 12-month window correlation analysis for a user-selected pair of indicators, providing insights into how their relationship evolves over time. Outputs both a CSV file of the rolling correlations and a visual plot (JPG) to `analysis/output/`.
+
+**Technology Stack:**
+
+*   Python 3
+*   Libraries: `requests` (for API communication), `pandas` (for data manipulation), `sqlite3` (for database interaction), `matplotlib` (for plotting).
+
+This README provides details on the project structure, setup instructions for each component, and an overview of the database schema.
 
 ## Project Structure
 
@@ -49,7 +70,7 @@ commodity/
     python main.py
     ```
     The script will then:
-    *   Create the `database/` directory if it doesn't exist (though it should exist from setup).
+    *   Create the `database/` directory if it doesn't exist.
     *   Connect to/create `database/imf_commodities.sqlite`.
     *   Fetch data and update `database/commodity_indicators_list.txt`.
     *   Log progress to console and `database/imf_data_fetch.log`.
