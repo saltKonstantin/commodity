@@ -104,12 +104,3 @@ This project contains a Python script (`main.py`) designed to fetch, process, an
 | `first_seen_script_run`       | TIMESTAMP | Timestamp of when the indicator was first recorded by the script         |
 | `last_seen_active_script_run` | TIMESTAMP | Timestamp of the last script run where this indicator was seen as active |
 | `is_currently_active`         | INTEGER   | Boolean (0 or 1) indicating if the indicator is currently active         |
-
-## Future Considerations / Potential Improvements
-
-*   **Configuration File**: Move API base URLs, file paths, and other constants to a configuration file (e.g., `config.ini` or `config.json`).
-*   **Error Handling**: More granular error handling and retry mechanisms for API requests.
-*   ** Incremental Fetches**: Implement logic to only fetch data since the last successful run for each series, if the API supports it, to reduce processing time and API load. (The current script re-fetches all available data for active series and relies on `ON CONFLICT` to update).
-*   **Command-line Arguments**: Add command-line arguments for more flexible operation (e.g., specifying date ranges, specific indicators, or database paths).
-*   **Data Analysis & Visualization**: Extend with modules for analyzing or visualizing the fetched data.
-*   **API Key Management**: If the API requires keys in the future, implement secure key management.
