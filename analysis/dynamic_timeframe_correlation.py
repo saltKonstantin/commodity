@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt # Added for plotting
 DB_FILE = os.path.join('..', 'database', 'imf_commodities.sqlite')
 INDICATORS_LIST_FILE = os.path.join('..', 'database', 'commodity_indicators_list.txt')
 DEFAULT_FREQUENCY = 'M'  # Using Monthly data
-FIXED_WINDOW_SIZE = 12 # Each correlation window will be this many months
+FIXED_WINDOW_SIZE = 60 # Each correlation window will be this many months
 
 def read_indicator_info(filepath):
     """Reads indicator codes and their descriptions from the specified file."""
