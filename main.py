@@ -4,12 +4,13 @@ import json
 import sqlite3 # Added for database operations
 import time    # Added for delays between API calls
 import logging # Added for logging
+import os      # Added for path joining
 
 # Base URL for the IMF API
 BASE_URL = 'http://dataservices.imf.org/REST/SDMX_JSON.svc/'
-DB_FILE = 'imf_commodities.sqlite'
-LOG_FILE = 'imf_data_fetch.log'
-INDICATORS_LIST_FILE = 'commodity_indicators_list.txt' # File for the list of indicators
+DB_FILE = os.path.join('database', 'imf_commodities.sqlite')
+LOG_FILE = os.path.join('database', 'imf_data_fetch.log')
+INDICATORS_LIST_FILE = os.path.join('database', 'commodity_indicators_list.txt') # File for the list of indicators
 
 # --- Logger Setup (done globally or in main) ---
 # Logger will be configured in __main__

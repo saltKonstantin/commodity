@@ -3,9 +3,11 @@ import pandas as pd
 from itertools import combinations
 import os
 
-DB_FILE = 'imf_commodities.sqlite'
-INDICATORS_LIST_FILE = 'commodity_indicators_list.txt'
-CSV_OUTPUT_FILE = 'full_correlation_results.csv'
+# Adjusted paths for the new directory structure
+DB_FILE = os.path.join('..', 'database', 'imf_commodities.sqlite')
+INDICATORS_LIST_FILE = os.path.join('..', 'database', 'commodity_indicators_list.txt')
+CSV_OUTPUT_FILE = os.path.join('output', 'full_correlation_results.csv')
+
 DEFAULT_FREQUENCY = 'M'  # Using Monthly data for all calculations
 MIN_MONTHS_FOR_CORRELATION = 12 # Minimum data points needed within the window for a valid correlation
 
@@ -116,6 +118,17 @@ def main():
     conn = None
     data_cache = {}
     
+    # Ensure the output directory exists
+    output_dir = os.path.dirname(CSV_OUTPUT_FILE)
+    # Check if output_dir is not empty (it would be if CSV_OUTPUT_FILE is just a filename)
+    if output_dir and not os.path.exists(output_dir):
+        try:
+            os.makedirs(output_dir)
+            print(f"Created output directory: {output_dir}")
+        except OSError as e:
+            print(f"Error creating output directory {output_dir}: {e}")
+            return
+
     try:
         if not os.path.exists(DB_FILE):
             print(f"Error: Database file not found at {DB_FILE}")
@@ -207,8 +220,8 @@ def main():
                             'indicator2_description': desc2,
                             'correlation': correlation,
                             'common_months_in_window': len(merged_df),
-                            'analysis_window_start': pair_analysis_start_period.strftime('%Y-%m'),
-                            'analysis_window_end': pair_analysis_end_period.strftime('%Y-%m')
+                            'analysis_window_start': pair_analysis_start_period.strftime('%Y-%m') if pd.notna(pair_analysis_start_period) else 'N/A',
+                            'analysis_window_end': pair_analysis_end_period.strftime('%Y-%m') if pd.notna(pair_analysis_end_period) else 'N/A'
                         })
             # else:
                 # if merged_df.empty:
