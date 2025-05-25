@@ -1,0 +1,891 @@
+2025-05-25 18:53:41,639 - imf_data_fetcher - INFO - Script starting. Logging to console and file.
+2025-05-25 18:53:41,646 - imf_data_fetcher - INFO - Database initialized/checked successfully at imf_commodities.sqlite
+2025-05-25 18:53:41,646 - imf_data_fetcher - INFO - Fetching Data Structure for: DataStructure/PCPS
+2025-05-25 18:53:41,647 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/DataStructure/PCPS
+2025-05-25 18:53:43,014 - imf_data_fetcher - INFO - Successfully parsed available codes from DataStructure.
+2025-05-25 18:53:43,014 - imf_data_fetcher - INFO - Updating indicators_metadata table with 110 indicators from API...
+2025-05-25 18:53:43,015 - imf_data_fetcher - INFO - Marked 0 existing indicators as inactive initially.
+2025-05-25 18:53:43,026 - imf_data_fetcher - INFO - Finished updating indicators_metadata table.
+2025-05-25 18:53:43,027 - imf_data_fetcher - INFO - Successfully wrote/updated currently active commodity indicators list to commodity_indicators_list.txt
+2025-05-25 18:53:43,028 - imf_data_fetcher - INFO - Targeting 110 distinct currently active indicators from the data structure.
+2025-05-25 18:53:43,028 - imf_data_fetcher - INFO - Will attempt to fetch and store 220 series configurations (active indicators, M/A frequencies)...
+2025-05-25 18:53:43,028 - imf_data_fetcher - INFO - (1/220) Attempting to fetch: CompactData/PCPS/A.W00.PRAWM.IX
+2025-05-25 18:53:43,028 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PRAWM.IX
+2025-05-25 18:53:44,401 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PRAWM, UNIT_MEASURE=IX
+2025-05-25 18:53:44,413 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PRAWM.IX.
+2025-05-25 18:53:44,414 - imf_data_fetcher - INFO - (2/220) Attempting to fetch: CompactData/PCPS/M.W00.PRAWM.IX
+2025-05-25 18:53:44,414 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PRAWM.IX
+2025-05-25 18:53:45,799 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PRAWM, UNIT_MEASURE=IX
+2025-05-25 18:53:45,835 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PRAWM.IX.
+2025-05-25 18:53:45,835 - imf_data_fetcher - INFO - (3/220) Attempting to fetch: CompactData/PCPS/A.W00.PAGRI.USD
+2025-05-25 18:53:45,836 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PAGRI.USD
+2025-05-25 18:53:47,216 - imf_data_fetcher - WARNING - No 'Series' data found in DataSet for CompactData/PCPS/A.W00.PAGRI.USD.
+2025-05-25 18:53:47,217 - imf_data_fetcher - INFO - (4/220) Attempting to fetch: CompactData/PCPS/M.W00.PAGRI.USD
+2025-05-25 18:53:47,218 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PAGRI.USD
+2025-05-25 18:53:48,534 - imf_data_fetcher - WARNING - No 'Series' data found in DataSet for CompactData/PCPS/M.W00.PAGRI.USD.
+2025-05-25 18:53:48,534 - imf_data_fetcher - INFO - (5/220) Attempting to fetch: CompactData/PCPS/A.W00.PALLFNF.IX
+2025-05-25 18:53:48,535 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PALLFNF.IX
+2025-05-25 18:53:49,929 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PALLFNF, UNIT_MEASURE=IX
+2025-05-25 18:53:49,939 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PALLFNF.IX.
+2025-05-25 18:53:49,940 - imf_data_fetcher - INFO - (6/220) Attempting to fetch: CompactData/PCPS/M.W00.PALLFNF.IX
+2025-05-25 18:53:49,940 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PALLFNF.IX
+2025-05-25 18:53:51,356 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PALLFNF, UNIT_MEASURE=IX
+2025-05-25 18:53:51,378 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PALLFNF.IX.
+2025-05-25 18:53:51,379 - imf_data_fetcher - INFO - (7/220) Attempting to fetch: CompactData/PCPS/A.W00.PEXGMETA.IX
+2025-05-25 18:53:51,380 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PEXGMETA.IX
+2025-05-25 18:53:52,752 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PEXGMETA, UNIT_MEASURE=IX
+2025-05-25 18:53:52,762 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PEXGMETA.IX.
+2025-05-25 18:53:52,762 - imf_data_fetcher - INFO - (8/220) Attempting to fetch: CompactData/PCPS/M.W00.PEXGMETA.IX
+2025-05-25 18:53:52,763 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PEXGMETA.IX
+2025-05-25 18:53:54,138 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PEXGMETA, UNIT_MEASURE=IX
+2025-05-25 18:53:54,166 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PEXGMETA.IX.
+2025-05-25 18:53:54,167 - imf_data_fetcher - INFO - (9/220) Attempting to fetch: CompactData/PCPS/A.W00.PALLMETA.IX
+2025-05-25 18:53:54,167 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PALLMETA.IX
+2025-05-25 18:53:55,558 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PALLMETA, UNIT_MEASURE=IX
+2025-05-25 18:53:55,569 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PALLMETA.IX.
+2025-05-25 18:53:55,570 - imf_data_fetcher - INFO - (10/220) Attempting to fetch: CompactData/PCPS/M.W00.PALLMETA.IX
+2025-05-25 18:53:55,571 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PALLMETA.IX
+2025-05-25 18:53:56,962 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PALLMETA, UNIT_MEASURE=IX
+2025-05-25 18:53:56,993 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PALLMETA.IX.
+2025-05-25 18:53:56,993 - imf_data_fetcher - INFO - (11/220) Attempting to fetch: CompactData/PCPS/A.W00.PALUM.USD
+2025-05-25 18:53:56,994 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PALUM.USD
+2025-05-25 18:53:58,345 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PALUM, UNIT_MEASURE=USD
+2025-05-25 18:53:58,355 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PALUM.USD.
+2025-05-25 18:53:58,356 - imf_data_fetcher - INFO - (12/220) Attempting to fetch: CompactData/PCPS/M.W00.PALUM.USD
+2025-05-25 18:53:58,356 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PALUM.USD
+2025-05-25 18:53:59,765 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PALUM, UNIT_MEASURE=USD
+2025-05-25 18:53:59,793 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PALUM.USD.
+2025-05-25 18:53:59,794 - imf_data_fetcher - INFO - (13/220) Attempting to fetch: CompactData/PCPS/A.W00.POILAPSP.USD
+2025-05-25 18:53:59,794 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.POILAPSP.USD
+2025-05-25 18:54:01,171 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=POILAPSP, UNIT_MEASURE=USD
+2025-05-25 18:54:01,180 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.POILAPSP.USD.
+2025-05-25 18:54:01,180 - imf_data_fetcher - INFO - (14/220) Attempting to fetch: CompactData/PCPS/M.W00.POILAPSP.USD
+2025-05-25 18:54:01,180 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.POILAPSP.USD
+2025-05-25 18:54:02,570 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=POILAPSP, UNIT_MEASURE=USD
+2025-05-25 18:54:02,599 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.POILAPSP.USD.
+2025-05-25 18:54:02,599 - imf_data_fetcher - INFO - (15/220) Attempting to fetch: CompactData/PCPS/A.W00.PBANSOP.USD
+2025-05-25 18:54:02,600 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PBANSOP.USD
+2025-05-25 18:54:03,970 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PBANSOP, UNIT_MEASURE=USD
+2025-05-25 18:54:03,980 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PBANSOP.USD.
+2025-05-25 18:54:03,981 - imf_data_fetcher - INFO - (16/220) Attempting to fetch: CompactData/PCPS/M.W00.PBANSOP.USD
+2025-05-25 18:54:03,981 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PBANSOP.USD
+2025-05-25 18:54:05,342 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PBANSOP, UNIT_MEASURE=USD
+2025-05-25 18:54:05,372 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PBANSOP.USD.
+2025-05-25 18:54:05,372 - imf_data_fetcher - INFO - (17/220) Attempting to fetch: CompactData/PCPS/A.W00.PBARL.USD
+2025-05-25 18:54:05,373 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PBARL.USD
+2025-05-25 18:54:06,754 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PBARL, UNIT_MEASURE=USD
+2025-05-25 18:54:06,766 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PBARL.USD.
+2025-05-25 18:54:06,766 - imf_data_fetcher - INFO - (18/220) Attempting to fetch: CompactData/PCPS/M.W00.PBARL.USD
+2025-05-25 18:54:06,766 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PBARL.USD
+2025-05-25 18:54:08,160 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PBARL, UNIT_MEASURE=USD
+2025-05-25 18:54:08,189 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PBARL.USD.
+2025-05-25 18:54:08,190 - imf_data_fetcher - INFO - (19/220) Attempting to fetch: CompactData/PCPS/A.W00.PBEEF.USD
+2025-05-25 18:54:08,190 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PBEEF.USD
+2025-05-25 18:54:09,586 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PBEEF, UNIT_MEASURE=USD
+2025-05-25 18:54:09,599 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PBEEF.USD.
+2025-05-25 18:54:09,599 - imf_data_fetcher - INFO - (20/220) Attempting to fetch: CompactData/PCPS/M.W00.PBEEF.USD
+2025-05-25 18:54:09,600 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PBEEF.USD
+2025-05-25 18:54:10,996 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PBEEF, UNIT_MEASURE=USD
+2025-05-25 18:54:11,029 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PBEEF.USD.
+2025-05-25 18:54:11,029 - imf_data_fetcher - INFO - (21/220) Attempting to fetch: CompactData/PCPS/A.W00.PBEVE.IX
+2025-05-25 18:54:11,029 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PBEVE.IX
+2025-05-25 18:54:12,402 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PBEVE, UNIT_MEASURE=IX
+2025-05-25 18:54:12,412 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PBEVE.IX.
+2025-05-25 18:54:12,412 - imf_data_fetcher - INFO - (22/220) Attempting to fetch: CompactData/PCPS/M.W00.PBEVE.IX
+2025-05-25 18:54:12,413 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PBEVE.IX
+2025-05-25 18:54:13,838 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PBEVE, UNIT_MEASURE=IX
+2025-05-25 18:54:13,867 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PBEVE.IX.
+2025-05-25 18:54:13,867 - imf_data_fetcher - INFO - (23/220) Attempting to fetch: CompactData/PCPS/A.W00.POILBRE.USD
+2025-05-25 18:54:13,868 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.POILBRE.USD
+2025-05-25 18:54:15,288 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=POILBRE, UNIT_MEASURE=USD
+2025-05-25 18:54:15,299 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.POILBRE.USD.
+2025-05-25 18:54:15,299 - imf_data_fetcher - INFO - (24/220) Attempting to fetch: CompactData/PCPS/M.W00.POILBRE.USD
+2025-05-25 18:54:15,299 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.POILBRE.USD
+2025-05-25 18:54:16,672 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=POILBRE, UNIT_MEASURE=USD
+2025-05-25 18:54:16,702 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.POILBRE.USD.
+2025-05-25 18:54:16,703 - imf_data_fetcher - INFO - (25/220) Attempting to fetch: CompactData/PCPS/A.W00.PCERE.IX
+2025-05-25 18:54:16,703 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCERE.IX
+2025-05-25 18:54:18,044 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCERE, UNIT_MEASURE=IX
+2025-05-25 18:54:18,056 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCERE.IX.
+2025-05-25 18:54:18,056 - imf_data_fetcher - INFO - (26/220) Attempting to fetch: CompactData/PCPS/M.W00.PCERE.IX
+2025-05-25 18:54:18,057 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCERE.IX
+2025-05-25 18:54:19,504 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCERE, UNIT_MEASURE=IX
+2025-05-25 18:54:19,534 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCERE.IX.
+2025-05-25 18:54:19,534 - imf_data_fetcher - INFO - (27/220) Attempting to fetch: CompactData/PCPS/A.W00.PCHROM.USD
+2025-05-25 18:54:19,535 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCHROM.USD
+2025-05-25 18:54:20,915 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCHROM, UNIT_MEASURE=USD
+2025-05-25 18:54:20,926 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCHROM.USD.
+2025-05-25 18:54:20,927 - imf_data_fetcher - INFO - (28/220) Attempting to fetch: CompactData/PCPS/M.W00.PCHROM.USD
+2025-05-25 18:54:20,927 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCHROM.USD
+2025-05-25 18:54:22,332 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCHROM, UNIT_MEASURE=USD
+2025-05-25 18:54:22,346 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCHROM.USD.
+2025-05-25 18:54:22,346 - imf_data_fetcher - INFO - (29/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOAL.IX
+2025-05-25 18:54:22,346 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOAL.IX
+2025-05-25 18:54:23,828 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOAL, UNIT_MEASURE=IX
+2025-05-25 18:54:23,840 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOAL.IX.
+2025-05-25 18:54:23,841 - imf_data_fetcher - INFO - (30/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOAL.IX
+2025-05-25 18:54:23,841 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOAL.IX
+2025-05-25 18:54:25,255 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOAL, UNIT_MEASURE=IX
+2025-05-25 18:54:25,283 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOAL.IX.
+2025-05-25 18:54:25,284 - imf_data_fetcher - INFO - (31/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOALAU.USD
+2025-05-25 18:54:25,284 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOALAU.USD
+2025-05-25 18:54:26,655 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOALAU, UNIT_MEASURE=USD
+2025-05-25 18:54:26,667 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOALAU.USD.
+2025-05-25 18:54:26,667 - imf_data_fetcher - INFO - (32/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOALAU.USD
+2025-05-25 18:54:26,668 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOALAU.USD
+2025-05-25 18:54:28,003 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOALAU, UNIT_MEASURE=USD
+2025-05-25 18:54:28,030 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOALAU.USD.
+2025-05-25 18:54:28,030 - imf_data_fetcher - INFO - (33/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOALSA.USD
+2025-05-25 18:54:28,031 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOALSA.USD
+2025-05-25 18:54:29,357 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOALSA, UNIT_MEASURE=USD
+2025-05-25 18:54:29,369 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOALSA.USD.
+2025-05-25 18:54:29,369 - imf_data_fetcher - INFO - (34/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOALSA.USD
+2025-05-25 18:54:29,369 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOALSA.USD
+2025-05-25 18:54:30,777 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOALSA, UNIT_MEASURE=USD
+2025-05-25 18:54:30,807 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOALSA.USD.
+2025-05-25 18:54:30,807 - imf_data_fetcher - INFO - (35/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOBA.USD
+2025-05-25 18:54:30,808 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOBA.USD
+2025-05-25 18:54:32,189 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOBA, UNIT_MEASURE=USD
+2025-05-25 18:54:32,197 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOBA.USD.
+2025-05-25 18:54:32,198 - imf_data_fetcher - INFO - (36/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOBA.USD
+2025-05-25 18:54:32,198 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOBA.USD
+2025-05-25 18:54:33,610 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOBA, UNIT_MEASURE=USD
+2025-05-25 18:54:33,637 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOBA.USD.
+2025-05-25 18:54:33,638 - imf_data_fetcher - INFO - (37/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOCO.USD
+2025-05-25 18:54:33,639 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOCO.USD
+2025-05-25 18:54:34,992 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOCO, UNIT_MEASURE=USD
+2025-05-25 18:54:35,001 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOCO.USD.
+2025-05-25 18:54:35,001 - imf_data_fetcher - INFO - (38/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOCO.USD
+2025-05-25 18:54:35,001 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOCO.USD
+2025-05-25 18:54:36,392 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOCO, UNIT_MEASURE=USD
+2025-05-25 18:54:36,424 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOCO.USD.
+2025-05-25 18:54:36,424 - imf_data_fetcher - INFO - (39/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOIL.USD
+2025-05-25 18:54:36,425 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOIL.USD
+2025-05-25 18:54:37,796 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOIL, UNIT_MEASURE=USD
+2025-05-25 18:54:37,807 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOIL.USD.
+2025-05-25 18:54:37,807 - imf_data_fetcher - INFO - (40/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOIL.USD
+2025-05-25 18:54:37,808 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOIL.USD
+2025-05-25 18:54:39,238 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOIL, UNIT_MEASURE=USD
+2025-05-25 18:54:39,269 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOIL.USD.
+2025-05-25 18:54:39,269 - imf_data_fetcher - INFO - (41/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOFF.IX
+2025-05-25 18:54:39,270 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOFF.IX
+2025-05-25 18:54:40,667 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOFF, UNIT_MEASURE=IX
+2025-05-25 18:54:40,677 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOFF.IX.
+2025-05-25 18:54:40,678 - imf_data_fetcher - INFO - (42/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOFF.IX
+2025-05-25 18:54:40,678 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOFF.IX
+2025-05-25 18:54:42,053 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOFF, UNIT_MEASURE=IX
+2025-05-25 18:54:42,081 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOFF.IX.
+2025-05-25 18:54:42,081 - imf_data_fetcher - INFO - (43/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOFFOTM.USD
+2025-05-25 18:54:42,082 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOFFOTM.USD
+2025-05-25 18:54:43,407 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOFFOTM, UNIT_MEASURE=USD
+2025-05-25 18:54:43,418 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOFFOTM.USD.
+2025-05-25 18:54:43,419 - imf_data_fetcher - INFO - (44/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOFFOTM.USD
+2025-05-25 18:54:43,419 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOFFOTM.USD
+2025-05-25 18:54:44,759 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOFFOTM, UNIT_MEASURE=USD
+2025-05-25 18:54:44,790 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOFFOTM.USD.
+2025-05-25 18:54:44,791 - imf_data_fetcher - INFO - (45/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOFFROB.USD
+2025-05-25 18:54:44,791 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOFFROB.USD
+2025-05-25 18:54:46,128 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOFFROB, UNIT_MEASURE=USD
+2025-05-25 18:54:46,139 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOFFROB.USD.
+2025-05-25 18:54:46,140 - imf_data_fetcher - INFO - (46/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOFFROB.USD
+2025-05-25 18:54:46,140 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOFFROB.USD
+2025-05-25 18:54:47,530 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOFFROB, UNIT_MEASURE=USD
+2025-05-25 18:54:47,559 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOFFROB.USD.
+2025-05-25 18:54:47,560 - imf_data_fetcher - INFO - (47/220) Attempting to fetch: CompactData/PCPS/A.W00.PEXGALL.IX
+2025-05-25 18:54:47,560 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PEXGALL.IX
+2025-05-25 18:54:48,937 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PEXGALL, UNIT_MEASURE=IX
+2025-05-25 18:54:48,949 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PEXGALL.IX.
+2025-05-25 18:54:48,950 - imf_data_fetcher - INFO - (48/220) Attempting to fetch: CompactData/PCPS/M.W00.PEXGALL.IX
+2025-05-25 18:54:48,950 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PEXGALL.IX
+2025-05-25 18:54:50,290 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PEXGALL, UNIT_MEASURE=IX
+2025-05-25 18:54:50,311 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PEXGALL.IX.
+2025-05-25 18:54:50,312 - imf_data_fetcher - INFO - (49/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOPP.USD
+2025-05-25 18:54:50,312 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOPP.USD
+2025-05-25 18:54:51,657 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOPP, UNIT_MEASURE=USD
+2025-05-25 18:54:51,667 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOPP.USD.
+2025-05-25 18:54:51,668 - imf_data_fetcher - INFO - (50/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOPP.USD
+2025-05-25 18:54:51,668 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOPP.USD
+2025-05-25 18:54:53,060 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOPP, UNIT_MEASURE=USD
+2025-05-25 18:54:53,091 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOPP.USD.
+2025-05-25 18:54:53,091 - imf_data_fetcher - INFO - (51/220) Attempting to fetch: CompactData/PCPS/A.W00.PMAIZMT.USD
+2025-05-25 18:54:53,092 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PMAIZMT.USD
+2025-05-25 18:54:54,443 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PMAIZMT, UNIT_MEASURE=USD
+2025-05-25 18:54:54,455 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PMAIZMT.USD.
+2025-05-25 18:54:54,456 - imf_data_fetcher - INFO - (52/220) Attempting to fetch: CompactData/PCPS/M.W00.PMAIZMT.USD
+2025-05-25 18:54:54,456 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PMAIZMT.USD
+2025-05-25 18:54:55,850 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PMAIZMT, UNIT_MEASURE=USD
+2025-05-25 18:54:55,878 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PMAIZMT.USD.
+2025-05-25 18:54:55,879 - imf_data_fetcher - INFO - (53/220) Attempting to fetch: CompactData/PCPS/A.W00.PCOTTIND.USD
+2025-05-25 18:54:55,879 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCOTTIND.USD
+2025-05-25 18:54:57,274 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCOTTIND, UNIT_MEASURE=USD
+2025-05-25 18:54:57,286 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCOTTIND.USD.
+2025-05-25 18:54:57,286 - imf_data_fetcher - INFO - (54/220) Attempting to fetch: CompactData/PCPS/M.W00.PCOTTIND.USD
+2025-05-25 18:54:57,286 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCOTTIND.USD
+2025-05-25 18:54:58,677 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCOTTIND, UNIT_MEASURE=USD
+2025-05-25 18:54:58,706 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCOTTIND.USD.
+2025-05-25 18:54:58,707 - imf_data_fetcher - INFO - (55/220) Attempting to fetch: CompactData/PCPS/A.W00.PMILK.USD
+2025-05-25 18:54:58,707 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PMILK.USD
+2025-05-25 18:55:00,079 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PMILK, UNIT_MEASURE=USD
+2025-05-25 18:55:00,090 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PMILK.USD.
+2025-05-25 18:55:00,091 - imf_data_fetcher - INFO - (56/220) Attempting to fetch: CompactData/PCPS/M.W00.PMILK.USD
+2025-05-25 18:55:00,091 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PMILK.USD
+2025-05-25 18:55:01,484 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PMILK, UNIT_MEASURE=USD
+2025-05-25 18:55:01,511 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PMILK.USD.
+2025-05-25 18:55:01,511 - imf_data_fetcher - INFO - (57/220) Attempting to fetch: CompactData/PCPS/A.W00.PDAP.USD
+2025-05-25 18:55:01,511 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PDAP.USD
+2025-05-25 18:55:02,907 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PDAP, UNIT_MEASURE=USD
+2025-05-25 18:55:02,918 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PDAP.USD.
+2025-05-25 18:55:02,919 - imf_data_fetcher - INFO - (58/220) Attempting to fetch: CompactData/PCPS/M.W00.PDAP.USD
+2025-05-25 18:55:02,919 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PDAP.USD
+2025-05-25 18:55:04,300 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PDAP, UNIT_MEASURE=USD
+2025-05-25 18:55:04,331 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PDAP.USD.
+2025-05-25 18:55:04,332 - imf_data_fetcher - INFO - (59/220) Attempting to fetch: CompactData/PCPS/A.W00.POILDUB.USD
+2025-05-25 18:55:04,332 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.POILDUB.USD
+2025-05-25 18:55:05,705 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=POILDUB, UNIT_MEASURE=USD
+2025-05-25 18:55:05,717 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.POILDUB.USD.
+2025-05-25 18:55:05,718 - imf_data_fetcher - INFO - (60/220) Attempting to fetch: CompactData/PCPS/M.W00.POILDUB.USD
+2025-05-25 18:55:05,718 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.POILDUB.USD
+2025-05-25 18:55:07,092 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=POILDUB, UNIT_MEASURE=USD
+2025-05-25 18:55:07,121 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.POILDUB.USD.
+2025-05-25 18:55:07,122 - imf_data_fetcher - INFO - (61/220) Attempting to fetch: CompactData/PCPS/A.W00.PNRG.IX
+2025-05-25 18:55:07,122 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNRG.IX
+2025-05-25 18:55:08,503 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNRG, UNIT_MEASURE=IX
+2025-05-25 18:55:08,514 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNRG.IX.
+2025-05-25 18:55:08,514 - imf_data_fetcher - INFO - (62/220) Attempting to fetch: CompactData/PCPS/M.W00.PNRG.IX
+2025-05-25 18:55:08,515 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNRG.IX
+2025-05-25 18:55:09,885 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNRG, UNIT_MEASURE=IX
+2025-05-25 18:55:09,914 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNRG.IX.
+2025-05-25 18:55:09,915 - imf_data_fetcher - INFO - (63/220) Attempting to fetch: CompactData/PCPS/A.W00.PENTM.IX
+2025-05-25 18:55:09,915 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PENTM.IX
+2025-05-25 18:55:11,301 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PENTM, UNIT_MEASURE=IX
+2025-05-25 18:55:11,312 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PENTM.IX.
+2025-05-25 18:55:11,313 - imf_data_fetcher - INFO - (64/220) Attempting to fetch: CompactData/PCPS/M.W00.PENTM.IX
+2025-05-25 18:55:11,313 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PENTM.IX
+2025-05-25 18:55:12,656 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PENTM, UNIT_MEASURE=IX
+2025-05-25 18:55:12,673 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PENTM.IX.
+2025-05-25 18:55:12,674 - imf_data_fetcher - INFO - (65/220) Attempting to fetch: CompactData/PCPS/A.W00.PFERT.USD
+2025-05-25 18:55:12,674 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PFERT.USD
+2025-05-25 18:55:14,032 - imf_data_fetcher - WARNING - No 'Series' data found in DataSet for CompactData/PCPS/A.W00.PFERT.USD.
+2025-05-25 18:55:14,032 - imf_data_fetcher - INFO - (66/220) Attempting to fetch: CompactData/PCPS/M.W00.PFERT.USD
+2025-05-25 18:55:14,033 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PFERT.USD
+2025-05-25 18:55:15,387 - imf_data_fetcher - WARNING - No 'Series' data found in DataSet for CompactData/PCPS/M.W00.PFERT.USD.
+2025-05-25 18:55:15,388 - imf_data_fetcher - INFO - (67/220) Attempting to fetch: CompactData/PCPS/A.W00.PSALM.USD
+2025-05-25 18:55:15,388 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSALM.USD
+2025-05-25 18:55:16,739 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSALM, UNIT_MEASURE=USD
+2025-05-25 18:55:16,750 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSALM.USD.
+2025-05-25 18:55:16,750 - imf_data_fetcher - INFO - (68/220) Attempting to fetch: CompactData/PCPS/M.W00.PSALM.USD
+2025-05-25 18:55:16,750 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSALM.USD
+2025-05-25 18:55:18,105 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSALM, UNIT_MEASURE=USD
+2025-05-25 18:55:18,135 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSALM.USD.
+2025-05-25 18:55:18,136 - imf_data_fetcher - INFO - (69/220) Attempting to fetch: CompactData/PCPS/A.W00.PFSHMEAL.USD
+2025-05-25 18:55:18,136 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PFSHMEAL.USD
+2025-05-25 18:55:19,473 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PFSHMEAL, UNIT_MEASURE=USD
+2025-05-25 18:55:19,486 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PFSHMEAL.USD.
+2025-05-25 18:55:19,486 - imf_data_fetcher - INFO - (70/220) Attempting to fetch: CompactData/PCPS/M.W00.PFSHMEAL.USD
+2025-05-25 18:55:19,487 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PFSHMEAL.USD
+2025-05-25 18:55:20,841 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PFSHMEAL, UNIT_MEASURE=USD
+2025-05-25 18:55:20,869 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PFSHMEAL.USD.
+2025-05-25 18:55:20,869 - imf_data_fetcher - INFO - (71/220) Attempting to fetch: CompactData/PCPS/A.W00.PFANDB.IX
+2025-05-25 18:55:20,870 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PFANDB.IX
+2025-05-25 18:55:22,293 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PFANDB, UNIT_MEASURE=IX
+2025-05-25 18:55:22,305 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PFANDB.IX.
+2025-05-25 18:55:22,306 - imf_data_fetcher - INFO - (72/220) Attempting to fetch: CompactData/PCPS/M.W00.PFANDB.IX
+2025-05-25 18:55:22,306 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PFANDB.IX
+2025-05-25 18:55:23,703 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PFANDB, UNIT_MEASURE=IX
+2025-05-25 18:55:23,729 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PFANDB.IX.
+2025-05-25 18:55:23,730 - imf_data_fetcher - INFO - (73/220) Attempting to fetch: CompactData/PCPS/A.W00.PFOOD.IX
+2025-05-25 18:55:23,730 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PFOOD.IX
+2025-05-25 18:55:25,084 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PFOOD, UNIT_MEASURE=IX
+2025-05-25 18:55:25,095 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PFOOD.IX.
+2025-05-25 18:55:25,096 - imf_data_fetcher - INFO - (74/220) Attempting to fetch: CompactData/PCPS/M.W00.PFOOD.IX
+2025-05-25 18:55:25,096 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PFOOD.IX
+2025-05-25 18:55:26,474 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PFOOD, UNIT_MEASURE=IX
+2025-05-25 18:55:26,502 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PFOOD.IX.
+2025-05-25 18:55:26,502 - imf_data_fetcher - INFO - (75/220) Attempting to fetch: CompactData/PCPS/A.W00.PGASO.USD
+2025-05-25 18:55:26,503 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PGASO.USD
+2025-05-25 18:55:27,837 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PGASO, UNIT_MEASURE=USD
+2025-05-25 18:55:27,848 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PGASO.USD.
+2025-05-25 18:55:27,849 - imf_data_fetcher - INFO - (76/220) Attempting to fetch: CompactData/PCPS/M.W00.PGASO.USD
+2025-05-25 18:55:27,849 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PGASO.USD
+2025-05-25 18:55:29,217 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PGASO, UNIT_MEASURE=USD
+2025-05-25 18:55:29,247 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PGASO.USD.
+2025-05-25 18:55:29,248 - imf_data_fetcher - INFO - (77/220) Attempting to fetch: CompactData/PCPS/A.W00.PGOLD.USD
+2025-05-25 18:55:29,248 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PGOLD.USD
+2025-05-25 18:55:30,577 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PGOLD, UNIT_MEASURE=USD
+2025-05-25 18:55:30,588 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PGOLD.USD.
+2025-05-25 18:55:30,588 - imf_data_fetcher - INFO - (78/220) Attempting to fetch: CompactData/PCPS/M.W00.PGOLD.USD
+2025-05-25 18:55:30,589 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PGOLD.USD
+2025-05-25 18:55:31,942 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PGOLD, UNIT_MEASURE=USD
+2025-05-25 18:55:31,971 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PGOLD.USD.
+2025-05-25 18:55:31,971 - imf_data_fetcher - INFO - (79/220) Attempting to fetch: CompactData/PCPS/A.W00.PGNUTS.USD
+2025-05-25 18:55:31,972 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PGNUTS.USD
+2025-05-25 18:55:33,369 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PGNUTS, UNIT_MEASURE=USD
+2025-05-25 18:55:33,379 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PGNUTS.USD.
+2025-05-25 18:55:33,380 - imf_data_fetcher - INFO - (80/220) Attempting to fetch: CompactData/PCPS/M.W00.PGNUTS.USD
+2025-05-25 18:55:33,380 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PGNUTS.USD
+2025-05-25 18:55:34,740 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PGNUTS, UNIT_MEASURE=USD
+2025-05-25 18:55:34,776 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PGNUTS.USD.
+2025-05-25 18:55:34,776 - imf_data_fetcher - INFO - (81/220) Attempting to fetch: CompactData/PCPS/A.W00.PLOGSK.USD
+2025-05-25 18:55:34,776 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PLOGSK.USD
+2025-05-25 18:55:36,128 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PLOGSK, UNIT_MEASURE=USD
+2025-05-25 18:55:36,140 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PLOGSK.USD.
+2025-05-25 18:55:36,140 - imf_data_fetcher - INFO - (82/220) Attempting to fetch: CompactData/PCPS/M.W00.PLOGSK.USD
+2025-05-25 18:55:36,141 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PLOGSK.USD
+2025-05-25 18:55:37,548 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PLOGSK, UNIT_MEASURE=USD
+2025-05-25 18:55:37,614 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PLOGSK.USD.
+2025-05-25 18:55:37,615 - imf_data_fetcher - INFO - (83/220) Attempting to fetch: CompactData/PCPS/A.W00.PSAWMAL.USD
+2025-05-25 18:55:37,615 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSAWMAL.USD
+2025-05-25 18:55:38,984 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSAWMAL, UNIT_MEASURE=USD
+2025-05-25 18:55:38,996 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSAWMAL.USD.
+2025-05-25 18:55:38,996 - imf_data_fetcher - INFO - (84/220) Attempting to fetch: CompactData/PCPS/M.W00.PSAWMAL.USD
+2025-05-25 18:55:38,997 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSAWMAL.USD
+2025-05-25 18:55:40,518 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSAWMAL, UNIT_MEASURE=USD
+2025-05-25 18:55:40,549 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSAWMAL.USD.
+2025-05-25 18:55:40,549 - imf_data_fetcher - INFO - (85/220) Attempting to fetch: CompactData/PCPS/A.W00.PHARD.IX
+2025-05-25 18:55:40,550 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PHARD.IX
+2025-05-25 18:55:41,890 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PHARD, UNIT_MEASURE=IX
+2025-05-25 18:55:41,901 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PHARD.IX.
+2025-05-25 18:55:41,902 - imf_data_fetcher - INFO - (86/220) Attempting to fetch: CompactData/PCPS/M.W00.PHARD.IX
+2025-05-25 18:55:41,902 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PHARD.IX
+2025-05-25 18:55:43,291 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PHARD, UNIT_MEASURE=IX
+2025-05-25 18:55:43,329 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PHARD.IX.
+2025-05-25 18:55:43,330 - imf_data_fetcher - INFO - (87/220) Attempting to fetch: CompactData/PCPS/A.W00.PHEATOIL.USD
+2025-05-25 18:55:43,330 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PHEATOIL.USD
+2025-05-25 18:55:44,676 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PHEATOIL, UNIT_MEASURE=USD
+2025-05-25 18:55:44,695 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PHEATOIL.USD.
+2025-05-25 18:55:44,695 - imf_data_fetcher - INFO - (88/220) Attempting to fetch: CompactData/PCPS/M.W00.PHEATOIL.USD
+2025-05-25 18:55:44,696 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PHEATOIL.USD
+2025-05-25 18:55:46,060 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PHEATOIL, UNIT_MEASURE=USD
+2025-05-25 18:55:46,102 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PHEATOIL.USD.
+2025-05-25 18:55:46,103 - imf_data_fetcher - INFO - (89/220) Attempting to fetch: CompactData/PCPS/A.W00.PHIDE.USD
+2025-05-25 18:55:46,103 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PHIDE.USD
+2025-05-25 18:55:47,499 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PHIDE, UNIT_MEASURE=USD
+2025-05-25 18:55:47,510 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PHIDE.USD.
+2025-05-25 18:55:47,511 - imf_data_fetcher - INFO - (90/220) Attempting to fetch: CompactData/PCPS/M.W00.PHIDE.USD
+2025-05-25 18:55:47,511 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PHIDE.USD
+2025-05-25 18:55:48,903 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PHIDE, UNIT_MEASURE=USD
+2025-05-25 18:55:48,950 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PHIDE.USD.
+2025-05-25 18:55:48,951 - imf_data_fetcher - INFO - (91/220) Attempting to fetch: CompactData/PCPS/A.W00.PINDU.IX
+2025-05-25 18:55:48,951 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PINDU.IX
+2025-05-25 18:55:50,307 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PINDU, UNIT_MEASURE=IX
+2025-05-25 18:55:50,318 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PINDU.IX.
+2025-05-25 18:55:50,319 - imf_data_fetcher - INFO - (92/220) Attempting to fetch: CompactData/PCPS/M.W00.PINDU.IX
+2025-05-25 18:55:50,319 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PINDU.IX
+2025-05-25 18:55:51,780 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PINDU, UNIT_MEASURE=IX
+2025-05-25 18:55:51,824 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PINDU.IX.
+2025-05-25 18:55:51,825 - imf_data_fetcher - INFO - (93/220) Attempting to fetch: CompactData/PCPS/A.W00.PIORECR.USD
+2025-05-25 18:55:51,825 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PIORECR.USD
+2025-05-25 18:55:53,267 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PIORECR, UNIT_MEASURE=USD
+2025-05-25 18:55:53,282 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PIORECR.USD.
+2025-05-25 18:55:53,282 - imf_data_fetcher - INFO - (94/220) Attempting to fetch: CompactData/PCPS/M.W00.PIORECR.USD
+2025-05-25 18:55:53,282 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PIORECR.USD
+2025-05-25 18:55:54,680 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PIORECR, UNIT_MEASURE=USD
+2025-05-25 18:55:54,716 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PIORECR.USD.
+2025-05-25 18:55:54,716 - imf_data_fetcher - INFO - (95/220) Attempting to fetch: CompactData/PCPS/A.W00.PLAMB.USD
+2025-05-25 18:55:54,716 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PLAMB.USD
+2025-05-25 18:55:56,069 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PLAMB, UNIT_MEASURE=USD
+2025-05-25 18:55:56,082 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PLAMB.USD.
+2025-05-25 18:55:56,082 - imf_data_fetcher - INFO - (96/220) Attempting to fetch: CompactData/PCPS/M.W00.PLAMB.USD
+2025-05-25 18:55:56,083 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PLAMB.USD
+2025-05-25 18:55:57,458 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PLAMB, UNIT_MEASURE=USD
+2025-05-25 18:55:57,506 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PLAMB.USD.
+2025-05-25 18:55:57,507 - imf_data_fetcher - INFO - (97/220) Attempting to fetch: CompactData/PCPS/A.W00.PLEAD.USD
+2025-05-25 18:55:57,508 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PLEAD.USD
+2025-05-25 18:55:58,853 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PLEAD, UNIT_MEASURE=USD
+2025-05-25 18:55:58,865 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PLEAD.USD.
+2025-05-25 18:55:58,865 - imf_data_fetcher - INFO - (98/220) Attempting to fetch: CompactData/PCPS/M.W00.PLEAD.USD
+2025-05-25 18:55:58,866 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PLEAD.USD
+2025-05-25 18:56:00,211 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PLEAD, UNIT_MEASURE=USD
+2025-05-25 18:56:00,246 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PLEAD.USD.
+2025-05-25 18:56:00,246 - imf_data_fetcher - INFO - (99/220) Attempting to fetch: CompactData/PCPS/A.W00.PCHANA.USD
+2025-05-25 18:56:00,246 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PCHANA.USD
+2025-05-25 18:56:01,625 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PCHANA, UNIT_MEASURE=USD
+2025-05-25 18:56:01,637 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PCHANA.USD.
+2025-05-25 18:56:01,638 - imf_data_fetcher - INFO - (100/220) Attempting to fetch: CompactData/PCPS/M.W00.PCHANA.USD
+2025-05-25 18:56:01,638 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PCHANA.USD
+2025-05-25 18:56:02,984 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PCHANA, UNIT_MEASURE=USD
+2025-05-25 18:56:03,009 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PCHANA.USD.
+2025-05-25 18:56:03,009 - imf_data_fetcher - INFO - (101/220) Attempting to fetch: CompactData/PCPS/A.W00.PLITH.USD
+2025-05-25 18:56:03,010 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PLITH.USD
+2025-05-25 18:56:04,385 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PLITH, UNIT_MEASURE=USD
+2025-05-25 18:56:04,397 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PLITH.USD.
+2025-05-25 18:56:04,398 - imf_data_fetcher - INFO - (102/220) Attempting to fetch: CompactData/PCPS/M.W00.PLITH.USD
+2025-05-25 18:56:04,398 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PLITH.USD
+2025-05-25 18:56:05,774 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PLITH, UNIT_MEASURE=USD
+2025-05-25 18:56:05,797 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PLITH.USD.
+2025-05-25 18:56:05,798 - imf_data_fetcher - INFO - (103/220) Attempting to fetch: CompactData/PCPS/A.W00.PNGASJP.USD
+2025-05-25 18:56:05,798 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNGASJP.USD
+2025-05-25 18:56:07,146 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNGASJP, UNIT_MEASURE=USD
+2025-05-25 18:56:07,159 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNGASJP.USD.
+2025-05-25 18:56:07,160 - imf_data_fetcher - INFO - (104/220) Attempting to fetch: CompactData/PCPS/M.W00.PNGASJP.USD
+2025-05-25 18:56:07,160 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNGASJP.USD
+2025-05-25 18:56:08,570 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNGASJP, UNIT_MEASURE=USD
+2025-05-25 18:56:08,601 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNGASJP.USD.
+2025-05-25 18:56:08,602 - imf_data_fetcher - INFO - (105/220) Attempting to fetch: CompactData/PCPS/A.W00.LMICS.IX
+2025-05-25 18:56:08,602 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.LMICS.IX
+2025-05-25 18:56:09,943 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=LMICS, UNIT_MEASURE=IX
+2025-05-25 18:56:09,955 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.LMICS.IX.
+2025-05-25 18:56:09,955 - imf_data_fetcher - INFO - (106/220) Attempting to fetch: CompactData/PCPS/M.W00.LMICS.IX
+2025-05-25 18:56:09,956 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.LMICS.IX
+2025-05-25 18:56:11,286 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=LMICS, UNIT_MEASURE=IX
+2025-05-25 18:56:11,316 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.LMICS.IX.
+2025-05-25 18:56:11,316 - imf_data_fetcher - INFO - (107/220) Attempting to fetch: CompactData/PCPS/A.W00.PMANGELE.USD
+2025-05-25 18:56:11,316 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PMANGELE.USD
+2025-05-25 18:56:12,668 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PMANGELE, UNIT_MEASURE=USD
+2025-05-25 18:56:12,679 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PMANGELE.USD.
+2025-05-25 18:56:12,680 - imf_data_fetcher - INFO - (108/220) Attempting to fetch: CompactData/PCPS/M.W00.PMANGELE.USD
+2025-05-25 18:56:12,680 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PMANGELE.USD
+2025-05-25 18:56:14,038 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PMANGELE, UNIT_MEASURE=USD
+2025-05-25 18:56:14,065 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PMANGELE.USD.
+2025-05-25 18:56:14,065 - imf_data_fetcher - INFO - (109/220) Attempting to fetch: CompactData/PCPS/A.W00.PMEAT.IX
+2025-05-25 18:56:14,066 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PMEAT.IX
+2025-05-25 18:56:15,451 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PMEAT, UNIT_MEASURE=IX
+2025-05-25 18:56:15,461 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PMEAT.IX.
+2025-05-25 18:56:15,461 - imf_data_fetcher - INFO - (110/220) Attempting to fetch: CompactData/PCPS/M.W00.PMEAT.IX
+2025-05-25 18:56:15,462 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PMEAT.IX
+2025-05-25 18:56:16,829 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PMEAT, UNIT_MEASURE=IX
+2025-05-25 18:56:16,873 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PMEAT.IX.
+2025-05-25 18:56:16,875 - imf_data_fetcher - INFO - (111/220) Attempting to fetch: CompactData/PCPS/A.W00.PMETA.IX
+2025-05-25 18:56:16,875 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PMETA.IX
+2025-05-25 18:56:18,234 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PMETA, UNIT_MEASURE=IX
+2025-05-25 18:56:18,245 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PMETA.IX.
+2025-05-25 18:56:18,246 - imf_data_fetcher - INFO - (112/220) Attempting to fetch: CompactData/PCPS/M.W00.PMETA.IX
+2025-05-25 18:56:18,246 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PMETA.IX
+2025-05-25 18:56:19,588 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PMETA, UNIT_MEASURE=IX
+2025-05-25 18:56:19,625 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PMETA.IX.
+2025-05-25 18:56:19,626 - imf_data_fetcher - INFO - (113/220) Attempting to fetch: CompactData/PCPS/A.W00.PLMMODY.USD
+2025-05-25 18:56:19,627 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PLMMODY.USD
+2025-05-25 18:56:21,010 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PLMMODY, UNIT_MEASURE=USD
+2025-05-25 18:56:21,023 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PLMMODY.USD.
+2025-05-25 18:56:21,024 - imf_data_fetcher - INFO - (114/220) Attempting to fetch: CompactData/PCPS/M.W00.PLMMODY.USD
+2025-05-25 18:56:21,024 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PLMMODY.USD
+2025-05-25 18:56:22,381 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PLMMODY, UNIT_MEASURE=USD
+2025-05-25 18:56:22,402 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PLMMODY.USD.
+2025-05-25 18:56:22,402 - imf_data_fetcher - INFO - (115/220) Attempting to fetch: CompactData/PCPS/A.W00.PNGAS.IX
+2025-05-25 18:56:22,403 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNGAS.IX
+2025-05-25 18:56:23,751 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNGAS, UNIT_MEASURE=IX
+2025-05-25 18:56:23,762 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNGAS.IX.
+2025-05-25 18:56:23,762 - imf_data_fetcher - INFO - (116/220) Attempting to fetch: CompactData/PCPS/M.W00.PNGAS.IX
+2025-05-25 18:56:23,762 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNGAS.IX
+2025-05-25 18:56:25,134 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNGAS, UNIT_MEASURE=IX
+2025-05-25 18:56:25,162 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNGAS.IX.
+2025-05-25 18:56:25,162 - imf_data_fetcher - INFO - (117/220) Attempting to fetch: CompactData/PCPS/A.W00.PNGASEU.USD
+2025-05-25 18:56:25,163 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNGASEU.USD
+2025-05-25 18:56:26,515 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNGASEU, UNIT_MEASURE=USD
+2025-05-25 18:56:26,526 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNGASEU.USD.
+2025-05-25 18:56:26,526 - imf_data_fetcher - INFO - (118/220) Attempting to fetch: CompactData/PCPS/M.W00.PNGASEU.USD
+2025-05-25 18:56:26,527 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNGASEU.USD
+2025-05-25 18:56:27,917 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNGASEU, UNIT_MEASURE=USD
+2025-05-25 18:56:27,948 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNGASEU.USD.
+2025-05-25 18:56:27,949 - imf_data_fetcher - INFO - (119/220) Attempting to fetch: CompactData/PCPS/A.W00.PNGASUS.USD
+2025-05-25 18:56:27,949 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNGASUS.USD
+2025-05-25 18:56:29,278 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNGASUS, UNIT_MEASURE=USD
+2025-05-25 18:56:29,290 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNGASUS.USD.
+2025-05-25 18:56:29,291 - imf_data_fetcher - INFO - (120/220) Attempting to fetch: CompactData/PCPS/M.W00.PNGASUS.USD
+2025-05-25 18:56:29,291 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNGASUS.USD
+2025-05-25 18:56:30,646 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNGASUS, UNIT_MEASURE=USD
+2025-05-25 18:56:30,671 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNGASUS.USD.
+2025-05-25 18:56:30,671 - imf_data_fetcher - INFO - (121/220) Attempting to fetch: CompactData/PCPS/A.W00.PNICK.USD
+2025-05-25 18:56:30,672 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNICK.USD
+2025-05-25 18:56:32,073 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNICK, UNIT_MEASURE=USD
+2025-05-25 18:56:32,081 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNICK.USD.
+2025-05-25 18:56:32,081 - imf_data_fetcher - INFO - (122/220) Attempting to fetch: CompactData/PCPS/M.W00.PNICK.USD
+2025-05-25 18:56:32,081 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNICK.USD
+2025-05-25 18:56:33,462 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNICK, UNIT_MEASURE=USD
+2025-05-25 18:56:33,494 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNICK.USD.
+2025-05-25 18:56:33,494 - imf_data_fetcher - INFO - (123/220) Attempting to fetch: CompactData/PCPS/A.W00.PAPPLE.USD
+2025-05-25 18:56:33,495 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PAPPLE.USD
+2025-05-25 18:56:34,900 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PAPPLE, UNIT_MEASURE=USD
+2025-05-25 18:56:34,909 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PAPPLE.USD.
+2025-05-25 18:56:34,910 - imf_data_fetcher - INFO - (124/220) Attempting to fetch: CompactData/PCPS/M.W00.PAPPLE.USD
+2025-05-25 18:56:34,910 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PAPPLE.USD
+2025-05-25 18:56:36,291 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PAPPLE, UNIT_MEASURE=USD
+2025-05-25 18:56:36,322 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PAPPLE.USD.
+2025-05-25 18:56:36,323 - imf_data_fetcher - INFO - (125/220) Attempting to fetch: CompactData/PCPS/A.W00.PNFUEL.IX
+2025-05-25 18:56:36,323 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PNFUEL.IX
+2025-05-25 18:56:37,678 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PNFUEL, UNIT_MEASURE=IX
+2025-05-25 18:56:37,687 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PNFUEL.IX.
+2025-05-25 18:56:37,687 - imf_data_fetcher - INFO - (126/220) Attempting to fetch: CompactData/PCPS/M.W00.PNFUEL.IX
+2025-05-25 18:56:37,687 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PNFUEL.IX
+2025-05-25 18:56:39,114 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PNFUEL, UNIT_MEASURE=IX
+2025-05-25 18:56:39,136 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PNFUEL.IX.
+2025-05-25 18:56:39,136 - imf_data_fetcher - INFO - (127/220) Attempting to fetch: CompactData/PCPS/A.W00.POATS.USD
+2025-05-25 18:56:39,137 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.POATS.USD
+2025-05-25 18:56:40,512 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=POATS, UNIT_MEASURE=USD
+2025-05-25 18:56:40,520 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.POATS.USD.
+2025-05-25 18:56:40,520 - imf_data_fetcher - INFO - (128/220) Attempting to fetch: CompactData/PCPS/M.W00.POATS.USD
+2025-05-25 18:56:40,521 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.POATS.USD
+2025-05-25 18:56:41,933 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=POATS, UNIT_MEASURE=USD
+2025-05-25 18:56:41,961 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.POATS.USD.
+2025-05-25 18:56:41,962 - imf_data_fetcher - INFO - (129/220) Attempting to fetch: CompactData/PCPS/A.W00.POLVOIL.USD
+2025-05-25 18:56:41,962 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.POLVOIL.USD
+2025-05-25 18:56:43,323 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=POLVOIL, UNIT_MEASURE=USD
+2025-05-25 18:56:43,332 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.POLVOIL.USD.
+2025-05-25 18:56:43,333 - imf_data_fetcher - INFO - (130/220) Attempting to fetch: CompactData/PCPS/M.W00.POLVOIL.USD
+2025-05-25 18:56:43,333 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.POLVOIL.USD
+2025-05-25 18:56:44,712 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=POLVOIL, UNIT_MEASURE=USD
+2025-05-25 18:56:44,743 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.POLVOIL.USD.
+2025-05-25 18:56:44,743 - imf_data_fetcher - INFO - (131/220) Attempting to fetch: CompactData/PCPS/A.W00.PORANG.USD
+2025-05-25 18:56:44,744 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PORANG.USD
+2025-05-25 18:56:46,143 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PORANG, UNIT_MEASURE=USD
+2025-05-25 18:56:46,156 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PORANG.USD.
+2025-05-25 18:56:46,157 - imf_data_fetcher - INFO - (132/220) Attempting to fetch: CompactData/PCPS/M.W00.PORANG.USD
+2025-05-25 18:56:46,157 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PORANG.USD
+2025-05-25 18:56:47,557 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PORANG, UNIT_MEASURE=USD
+2025-05-25 18:56:47,589 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PORANG.USD.
+2025-05-25 18:56:47,590 - imf_data_fetcher - INFO - (133/220) Attempting to fetch: CompactData/PCPS/A.W00.PPALLA.USD
+2025-05-25 18:56:47,590 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPALLA.USD
+2025-05-25 18:56:48,965 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPALLA, UNIT_MEASURE=USD
+2025-05-25 18:56:48,975 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPALLA.USD.
+2025-05-25 18:56:48,976 - imf_data_fetcher - INFO - (134/220) Attempting to fetch: CompactData/PCPS/M.W00.PPALLA.USD
+2025-05-25 18:56:48,976 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPALLA.USD
+2025-05-25 18:56:50,342 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPALLA, UNIT_MEASURE=USD
+2025-05-25 18:56:50,373 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPALLA.USD.
+2025-05-25 18:56:50,373 - imf_data_fetcher - INFO - (135/220) Attempting to fetch: CompactData/PCPS/A.W00.PPOIL.USD
+2025-05-25 18:56:50,373 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPOIL.USD
+2025-05-25 18:56:51,741 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPOIL, UNIT_MEASURE=USD
+2025-05-25 18:56:51,752 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPOIL.USD.
+2025-05-25 18:56:51,752 - imf_data_fetcher - INFO - (136/220) Attempting to fetch: CompactData/PCPS/M.W00.PPOIL.USD
+2025-05-25 18:56:51,752 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPOIL.USD
+2025-05-25 18:56:53,158 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPOIL, UNIT_MEASURE=USD
+2025-05-25 18:56:53,186 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPOIL.USD.
+2025-05-25 18:56:53,187 - imf_data_fetcher - INFO - (137/220) Attempting to fetch: CompactData/PCPS/A.W00.PPLAT.USD
+2025-05-25 18:56:53,187 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPLAT.USD
+2025-05-25 18:56:54,536 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPLAT, UNIT_MEASURE=USD
+2025-05-25 18:56:54,547 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPLAT.USD.
+2025-05-25 18:56:54,548 - imf_data_fetcher - INFO - (138/220) Attempting to fetch: CompactData/PCPS/M.W00.PPLAT.USD
+2025-05-25 18:56:54,548 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPLAT.USD
+2025-05-25 18:56:55,918 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPLAT, UNIT_MEASURE=USD
+2025-05-25 18:56:55,948 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPLAT.USD.
+2025-05-25 18:56:55,948 - imf_data_fetcher - INFO - (139/220) Attempting to fetch: CompactData/PCPS/A.W00.PPOTASH.USD
+2025-05-25 18:56:55,949 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPOTASH.USD
+2025-05-25 18:56:57,291 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPOTASH, UNIT_MEASURE=USD
+2025-05-25 18:56:57,300 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPOTASH.USD.
+2025-05-25 18:56:57,300 - imf_data_fetcher - INFO - (140/220) Attempting to fetch: CompactData/PCPS/M.W00.PPOTASH.USD
+2025-05-25 18:56:57,301 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPOTASH.USD
+2025-05-25 18:56:58,657 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPOTASH, UNIT_MEASURE=USD
+2025-05-25 18:56:58,680 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPOTASH.USD.
+2025-05-25 18:56:58,680 - imf_data_fetcher - INFO - (141/220) Attempting to fetch: CompactData/PCPS/A.W00.PPOULT.USD
+2025-05-25 18:56:58,681 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPOULT.USD
+2025-05-25 18:57:00,036 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPOULT, UNIT_MEASURE=USD
+2025-05-25 18:57:00,046 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPOULT.USD.
+2025-05-25 18:57:00,047 - imf_data_fetcher - INFO - (142/220) Attempting to fetch: CompactData/PCPS/M.W00.PPOULT.USD
+2025-05-25 18:57:00,047 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPOULT.USD
+2025-05-25 18:57:01,416 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPOULT, UNIT_MEASURE=USD
+2025-05-25 18:57:01,456 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPOULT.USD.
+2025-05-25 18:57:01,456 - imf_data_fetcher - INFO - (143/220) Attempting to fetch: CompactData/PCPS/A.W00.PPMETA.IX
+2025-05-25 18:57:01,457 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPMETA.IX
+2025-05-25 18:57:02,826 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPMETA, UNIT_MEASURE=IX
+2025-05-25 18:57:02,837 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPMETA.IX.
+2025-05-25 18:57:02,837 - imf_data_fetcher - INFO - (144/220) Attempting to fetch: CompactData/PCPS/M.W00.PPMETA.IX
+2025-05-25 18:57:02,837 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPMETA.IX
+2025-05-25 18:57:04,199 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPMETA, UNIT_MEASURE=IX
+2025-05-25 18:57:04,227 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPMETA.IX.
+2025-05-25 18:57:04,227 - imf_data_fetcher - INFO - (145/220) Attempting to fetch: CompactData/PCPS/A.W00.PPROPANE.USD
+2025-05-25 18:57:04,228 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPROPANE.USD
+2025-05-25 18:57:05,651 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPROPANE, UNIT_MEASURE=USD
+2025-05-25 18:57:05,664 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPROPANE.USD.
+2025-05-25 18:57:05,665 - imf_data_fetcher - INFO - (146/220) Attempting to fetch: CompactData/PCPS/M.W00.PPROPANE.USD
+2025-05-25 18:57:05,665 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPROPANE.USD
+2025-05-25 18:57:07,051 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPROPANE, UNIT_MEASURE=USD
+2025-05-25 18:57:07,079 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPROPANE.USD.
+2025-05-25 18:57:07,079 - imf_data_fetcher - INFO - (147/220) Attempting to fetch: CompactData/PCPS/A.W00.PROIL.USD
+2025-05-25 18:57:07,080 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PROIL.USD
+2025-05-25 18:57:08,420 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PROIL, UNIT_MEASURE=USD
+2025-05-25 18:57:08,432 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PROIL.USD.
+2025-05-25 18:57:08,433 - imf_data_fetcher - INFO - (148/220) Attempting to fetch: CompactData/PCPS/M.W00.PROIL.USD
+2025-05-25 18:57:08,433 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PROIL.USD
+2025-05-25 18:57:09,798 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PROIL, UNIT_MEASURE=USD
+2025-05-25 18:57:09,863 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PROIL.USD.
+2025-05-25 18:57:09,864 - imf_data_fetcher - INFO - (149/220) Attempting to fetch: CompactData/PCPS/A.W00.PREODOM.USD
+2025-05-25 18:57:09,864 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PREODOM.USD
+2025-05-25 18:57:11,235 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PREODOM, UNIT_MEASURE=USD
+2025-05-25 18:57:11,245 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PREODOM.USD.
+2025-05-25 18:57:11,245 - imf_data_fetcher - INFO - (150/220) Attempting to fetch: CompactData/PCPS/M.W00.PREODOM.USD
+2025-05-25 18:57:11,245 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PREODOM.USD
+2025-05-25 18:57:12,602 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PREODOM, UNIT_MEASURE=USD
+2025-05-25 18:57:12,620 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PREODOM.USD.
+2025-05-25 18:57:12,621 - imf_data_fetcher - INFO - (151/220) Attempting to fetch: CompactData/PCPS/A.W00.PRICENPQ.USD
+2025-05-25 18:57:12,621 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PRICENPQ.USD
+2025-05-25 18:57:13,968 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PRICENPQ, UNIT_MEASURE=USD
+2025-05-25 18:57:13,977 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PRICENPQ.USD.
+2025-05-25 18:57:13,977 - imf_data_fetcher - INFO - (152/220) Attempting to fetch: CompactData/PCPS/M.W00.PRICENPQ.USD
+2025-05-25 18:57:13,978 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PRICENPQ.USD
+2025-05-25 18:57:15,337 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PRICENPQ, UNIT_MEASURE=USD
+2025-05-25 18:57:15,369 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PRICENPQ.USD.
+2025-05-25 18:57:15,369 - imf_data_fetcher - INFO - (153/220) Attempting to fetch: CompactData/PCPS/A.W00.PRUBB.USD
+2025-05-25 18:57:15,370 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PRUBB.USD
+2025-05-25 18:57:16,734 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PRUBB, UNIT_MEASURE=USD
+2025-05-25 18:57:16,745 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PRUBB.USD.
+2025-05-25 18:57:16,745 - imf_data_fetcher - INFO - (154/220) Attempting to fetch: CompactData/PCPS/M.W00.PRUBB.USD
+2025-05-25 18:57:16,745 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PRUBB.USD
+2025-05-25 18:57:18,088 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PRUBB, UNIT_MEASURE=USD
+2025-05-25 18:57:18,119 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PRUBB.USD.
+2025-05-25 18:57:18,120 - imf_data_fetcher - INFO - (155/220) Attempting to fetch: CompactData/PCPS/A.W00.PSEAF.IX
+2025-05-25 18:57:18,120 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSEAF.IX
+2025-05-25 18:57:19,452 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSEAF, UNIT_MEASURE=IX
+2025-05-25 18:57:19,463 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSEAF.IX.
+2025-05-25 18:57:19,464 - imf_data_fetcher - INFO - (156/220) Attempting to fetch: CompactData/PCPS/M.W00.PSEAF.IX
+2025-05-25 18:57:19,464 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSEAF.IX
+2025-05-25 18:57:20,853 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSEAF, UNIT_MEASURE=IX
+2025-05-25 18:57:20,883 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSEAF.IX.
+2025-05-25 18:57:20,883 - imf_data_fetcher - INFO - (157/220) Attempting to fetch: CompactData/PCPS/A.W00.PSHRI.USD
+2025-05-25 18:57:20,883 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSHRI.USD
+2025-05-25 18:57:22,218 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSHRI, UNIT_MEASURE=USD
+2025-05-25 18:57:22,255 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSHRI.USD.
+2025-05-25 18:57:22,256 - imf_data_fetcher - INFO - (158/220) Attempting to fetch: CompactData/PCPS/M.W00.PSHRI.USD
+2025-05-25 18:57:22,256 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSHRI.USD
+2025-05-25 18:57:23,607 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSHRI, UNIT_MEASURE=USD
+2025-05-25 18:57:23,644 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSHRI.USD.
+2025-05-25 18:57:23,645 - imf_data_fetcher - INFO - (159/220) Attempting to fetch: CompactData/PCPS/A.W00.PSILLUMP.USD
+2025-05-25 18:57:23,645 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSILLUMP.USD
+2025-05-25 18:57:25,020 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSILLUMP, UNIT_MEASURE=USD
+2025-05-25 18:57:25,027 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSILLUMP.USD.
+2025-05-25 18:57:25,028 - imf_data_fetcher - INFO - (160/220) Attempting to fetch: CompactData/PCPS/M.W00.PSILLUMP.USD
+2025-05-25 18:57:25,028 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSILLUMP.USD
+2025-05-25 18:57:26,393 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSILLUMP, UNIT_MEASURE=USD
+2025-05-25 18:57:26,408 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSILLUMP.USD.
+2025-05-25 18:57:26,408 - imf_data_fetcher - INFO - (161/220) Attempting to fetch: CompactData/PCPS/A.W00.PSILVER.USD
+2025-05-25 18:57:26,408 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSILVER.USD
+2025-05-25 18:57:27,768 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSILVER, UNIT_MEASURE=USD
+2025-05-25 18:57:27,777 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSILVER.USD.
+2025-05-25 18:57:27,777 - imf_data_fetcher - INFO - (162/220) Attempting to fetch: CompactData/PCPS/M.W00.PSILVER.USD
+2025-05-25 18:57:27,777 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSILVER.USD
+2025-05-25 18:57:29,118 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSILVER, UNIT_MEASURE=USD
+2025-05-25 18:57:29,146 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSILVER.USD.
+2025-05-25 18:57:29,146 - imf_data_fetcher - INFO - (163/220) Attempting to fetch: CompactData/PCPS/A.W00.PLOGORE.USD
+2025-05-25 18:57:29,146 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PLOGORE.USD
+2025-05-25 18:57:30,480 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PLOGORE, UNIT_MEASURE=USD
+2025-05-25 18:57:30,492 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PLOGORE.USD.
+2025-05-25 18:57:30,492 - imf_data_fetcher - INFO - (164/220) Attempting to fetch: CompactData/PCPS/M.W00.PLOGORE.USD
+2025-05-25 18:57:30,492 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PLOGORE.USD
+2025-05-25 18:57:31,878 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PLOGORE, UNIT_MEASURE=USD
+2025-05-25 18:57:31,909 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PLOGORE.USD.
+2025-05-25 18:57:31,910 - imf_data_fetcher - INFO - (165/220) Attempting to fetch: CompactData/PCPS/A.W00.PSAWORE.USD
+2025-05-25 18:57:31,910 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSAWORE.USD
+2025-05-25 18:57:33,278 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSAWORE, UNIT_MEASURE=USD
+2025-05-25 18:57:33,288 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSAWORE.USD.
+2025-05-25 18:57:33,289 - imf_data_fetcher - INFO - (166/220) Attempting to fetch: CompactData/PCPS/M.W00.PSAWORE.USD
+2025-05-25 18:57:33,289 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSAWORE.USD
+2025-05-25 18:57:34,688 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSAWORE, UNIT_MEASURE=USD
+2025-05-25 18:57:34,717 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSAWORE.USD.
+2025-05-25 18:57:34,717 - imf_data_fetcher - INFO - (167/220) Attempting to fetch: CompactData/PCPS/A.W00.PSOFT.IX
+2025-05-25 18:57:34,717 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSOFT.IX
+2025-05-25 18:57:36,067 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSOFT, UNIT_MEASURE=IX
+2025-05-25 18:57:36,075 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSOFT.IX.
+2025-05-25 18:57:36,075 - imf_data_fetcher - INFO - (168/220) Attempting to fetch: CompactData/PCPS/M.W00.PSOFT.IX
+2025-05-25 18:57:36,075 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSOFT.IX
+2025-05-25 18:57:37,467 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSOFT, UNIT_MEASURE=IX
+2025-05-25 18:57:37,496 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSOFT.IX.
+2025-05-25 18:57:37,497 - imf_data_fetcher - INFO - (169/220) Attempting to fetch: CompactData/PCPS/A.W00.PSORG.USD
+2025-05-25 18:57:37,497 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSORG.USD
+2025-05-25 18:57:38,864 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSORG, UNIT_MEASURE=USD
+2025-05-25 18:57:38,874 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSORG.USD.
+2025-05-25 18:57:38,874 - imf_data_fetcher - INFO - (170/220) Attempting to fetch: CompactData/PCPS/M.W00.PSORG.USD
+2025-05-25 18:57:38,874 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSORG.USD
+2025-05-25 18:57:40,253 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSORG, UNIT_MEASURE=USD
+2025-05-25 18:57:40,279 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSORG.USD.
+2025-05-25 18:57:40,280 - imf_data_fetcher - INFO - (171/220) Attempting to fetch: CompactData/PCPS/A.W00.PSMEA.USD
+2025-05-25 18:57:40,280 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSMEA.USD
+2025-05-25 18:57:41,664 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSMEA, UNIT_MEASURE=USD
+2025-05-25 18:57:41,673 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSMEA.USD.
+2025-05-25 18:57:41,674 - imf_data_fetcher - INFO - (172/220) Attempting to fetch: CompactData/PCPS/M.W00.PSMEA.USD
+2025-05-25 18:57:41,674 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSMEA.USD
+2025-05-25 18:57:43,059 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSMEA, UNIT_MEASURE=USD
+2025-05-25 18:57:43,093 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSMEA.USD.
+2025-05-25 18:57:43,093 - imf_data_fetcher - INFO - (173/220) Attempting to fetch: CompactData/PCPS/A.W00.PSOYB.USD
+2025-05-25 18:57:43,094 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSOYB.USD
+2025-05-25 18:57:44,473 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSOYB, UNIT_MEASURE=USD
+2025-05-25 18:57:44,485 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSOYB.USD.
+2025-05-25 18:57:44,485 - imf_data_fetcher - INFO - (174/220) Attempting to fetch: CompactData/PCPS/M.W00.PSOYB.USD
+2025-05-25 18:57:44,486 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSOYB.USD
+2025-05-25 18:57:45,861 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSOYB, UNIT_MEASURE=USD
+2025-05-25 18:57:45,893 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSOYB.USD.
+2025-05-25 18:57:45,894 - imf_data_fetcher - INFO - (175/220) Attempting to fetch: CompactData/PCPS/A.W00.PSOIL.USD
+2025-05-25 18:57:45,894 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSOIL.USD
+2025-05-25 18:57:47,285 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSOIL, UNIT_MEASURE=USD
+2025-05-25 18:57:47,295 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSOIL.USD.
+2025-05-25 18:57:47,295 - imf_data_fetcher - INFO - (176/220) Attempting to fetch: CompactData/PCPS/M.W00.PSOIL.USD
+2025-05-25 18:57:47,296 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSOIL.USD
+2025-05-25 18:57:48,658 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSOIL, UNIT_MEASURE=USD
+2025-05-25 18:57:48,692 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSOIL.USD.
+2025-05-25 18:57:48,692 - imf_data_fetcher - INFO - (177/220) Attempting to fetch: CompactData/PCPS/A.W00.PSUGA.IX
+2025-05-25 18:57:48,693 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSUGA.IX
+2025-05-25 18:57:50,058 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSUGA, UNIT_MEASURE=IX
+2025-05-25 18:57:50,071 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSUGA.IX.
+2025-05-25 18:57:50,072 - imf_data_fetcher - INFO - (178/220) Attempting to fetch: CompactData/PCPS/M.W00.PSUGA.IX
+2025-05-25 18:57:50,072 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSUGA.IX
+2025-05-25 18:57:51,410 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSUGA, UNIT_MEASURE=IX
+2025-05-25 18:57:51,483 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSUGA.IX.
+2025-05-25 18:57:51,484 - imf_data_fetcher - INFO - (179/220) Attempting to fetch: CompactData/PCPS/A.W00.PSUGAISA.USD
+2025-05-25 18:57:51,484 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSUGAISA.USD
+2025-05-25 18:57:52,847 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSUGAISA, UNIT_MEASURE=USD
+2025-05-25 18:57:52,862 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSUGAISA.USD.
+2025-05-25 18:57:52,862 - imf_data_fetcher - INFO - (180/220) Attempting to fetch: CompactData/PCPS/M.W00.PSUGAISA.USD
+2025-05-25 18:57:52,863 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSUGAISA.USD
+2025-05-25 18:57:54,251 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSUGAISA, UNIT_MEASURE=USD
+2025-05-25 18:57:54,290 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSUGAISA.USD.
+2025-05-25 18:57:54,290 - imf_data_fetcher - INFO - (181/220) Attempting to fetch: CompactData/PCPS/A.W00.PSUGAUSA.USD
+2025-05-25 18:57:54,291 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSUGAUSA.USD
+2025-05-25 18:57:55,631 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSUGAUSA, UNIT_MEASURE=USD
+2025-05-25 18:57:55,646 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSUGAUSA.USD.
+2025-05-25 18:57:55,646 - imf_data_fetcher - INFO - (182/220) Attempting to fetch: CompactData/PCPS/M.W00.PSUGAUSA.USD
+2025-05-25 18:57:55,647 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSUGAUSA.USD
+2025-05-25 18:57:57,024 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSUGAUSA, UNIT_MEASURE=USD
+2025-05-25 18:57:57,065 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSUGAUSA.USD.
+2025-05-25 18:57:57,065 - imf_data_fetcher - INFO - (183/220) Attempting to fetch: CompactData/PCPS/A.W00.PSUNO.USD
+2025-05-25 18:57:57,066 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PSUNO.USD
+2025-05-25 18:57:58,447 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PSUNO, UNIT_MEASURE=USD
+2025-05-25 18:57:58,460 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PSUNO.USD.
+2025-05-25 18:57:58,461 - imf_data_fetcher - INFO - (184/220) Attempting to fetch: CompactData/PCPS/M.W00.PSUNO.USD
+2025-05-25 18:57:58,461 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PSUNO.USD
+2025-05-25 18:57:59,897 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PSUNO, UNIT_MEASURE=USD
+2025-05-25 18:57:59,940 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PSUNO.USD.
+2025-05-25 18:57:59,940 - imf_data_fetcher - INFO - (185/220) Attempting to fetch: CompactData/PCPS/A.W00.PPORK.USD
+2025-05-25 18:57:59,940 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PPORK.USD
+2025-05-25 18:58:01,336 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PPORK, UNIT_MEASURE=USD
+2025-05-25 18:58:01,353 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PPORK.USD.
+2025-05-25 18:58:01,354 - imf_data_fetcher - INFO - (186/220) Attempting to fetch: CompactData/PCPS/M.W00.PPORK.USD
+2025-05-25 18:58:01,354 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PPORK.USD
+2025-05-25 18:58:02,778 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PPORK, UNIT_MEASURE=USD
+2025-05-25 18:58:02,808 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PPORK.USD.
+2025-05-25 18:58:02,808 - imf_data_fetcher - INFO - (187/220) Attempting to fetch: CompactData/PCPS/A.W00.PTEASL.USD
+2025-05-25 18:58:02,809 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTEASL.USD
+2025-05-25 18:58:04,191 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTEASL, UNIT_MEASURE=USD
+2025-05-25 18:58:04,200 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTEASL.USD.
+2025-05-25 18:58:04,200 - imf_data_fetcher - INFO - (188/220) Attempting to fetch: CompactData/PCPS/M.W00.PTEASL.USD
+2025-05-25 18:58:04,200 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTEASL.USD
+2025-05-25 18:58:05,596 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTEASL, UNIT_MEASURE=USD
+2025-05-25 18:58:05,620 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTEASL.USD.
+2025-05-25 18:58:05,620 - imf_data_fetcher - INFO - (189/220) Attempting to fetch: CompactData/PCPS/A.W00.PTEA.USD
+2025-05-25 18:58:05,620 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTEA.USD
+2025-05-25 18:58:06,980 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTEA, UNIT_MEASURE=USD
+2025-05-25 18:58:06,989 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTEA.USD.
+2025-05-25 18:58:06,990 - imf_data_fetcher - INFO - (190/220) Attempting to fetch: CompactData/PCPS/M.W00.PTEA.USD
+2025-05-25 18:58:06,990 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTEA.USD
+2025-05-25 18:58:08,348 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTEA, UNIT_MEASURE=USD
+2025-05-25 18:58:08,402 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTEA.USD.
+2025-05-25 18:58:08,403 - imf_data_fetcher - INFO - (191/220) Attempting to fetch: CompactData/PCPS/A.W00.PTEAINDIA.USD
+2025-05-25 18:58:08,403 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTEAINDIA.USD
+2025-05-25 18:58:09,750 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTEAINDIA, UNIT_MEASURE=USD
+2025-05-25 18:58:09,760 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTEAINDIA.USD.
+2025-05-25 18:58:09,760 - imf_data_fetcher - INFO - (192/220) Attempting to fetch: CompactData/PCPS/M.W00.PTEAINDIA.USD
+2025-05-25 18:58:09,761 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTEAINDIA.USD
+2025-05-25 18:58:11,132 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTEAINDIA, UNIT_MEASURE=USD
+2025-05-25 18:58:11,168 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTEAINDIA.USD.
+2025-05-25 18:58:11,169 - imf_data_fetcher - INFO - (193/220) Attempting to fetch: CompactData/PCPS/A.W00.PTEAMOM.USD
+2025-05-25 18:58:11,169 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTEAMOM.USD
+2025-05-25 18:58:12,501 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTEAMOM, UNIT_MEASURE=USD
+2025-05-25 18:58:12,512 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTEAMOM.USD.
+2025-05-25 18:58:12,512 - imf_data_fetcher - INFO - (194/220) Attempting to fetch: CompactData/PCPS/M.W00.PTEAMOM.USD
+2025-05-25 18:58:12,513 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTEAMOM.USD
+2025-05-25 18:58:13,895 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTEAMOM, UNIT_MEASURE=USD
+2025-05-25 18:58:13,923 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTEAMOM.USD.
+2025-05-25 18:58:13,923 - imf_data_fetcher - INFO - (195/220) Attempting to fetch: CompactData/PCPS/A.W00.PTIMB.IX
+2025-05-25 18:58:13,924 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTIMB.IX
+2025-05-25 18:58:15,250 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTIMB, UNIT_MEASURE=IX
+2025-05-25 18:58:15,262 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTIMB.IX.
+2025-05-25 18:58:15,262 - imf_data_fetcher - INFO - (196/220) Attempting to fetch: CompactData/PCPS/M.W00.PTIMB.IX
+2025-05-25 18:58:15,262 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTIMB.IX
+2025-05-25 18:58:16,625 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTIMB, UNIT_MEASURE=IX
+2025-05-25 18:58:16,655 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTIMB.IX.
+2025-05-25 18:58:16,656 - imf_data_fetcher - INFO - (197/220) Attempting to fetch: CompactData/PCPS/A.W00.PTIN.USD
+2025-05-25 18:58:16,656 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTIN.USD
+2025-05-25 18:58:18,022 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTIN, UNIT_MEASURE=USD
+2025-05-25 18:58:18,033 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTIN.USD.
+2025-05-25 18:58:18,034 - imf_data_fetcher - INFO - (198/220) Attempting to fetch: CompactData/PCPS/M.W00.PTIN.USD
+2025-05-25 18:58:18,034 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTIN.USD
+2025-05-25 18:58:19,412 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTIN, UNIT_MEASURE=USD
+2025-05-25 18:58:19,442 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTIN.USD.
+2025-05-25 18:58:19,442 - imf_data_fetcher - INFO - (199/220) Attempting to fetch: CompactData/PCPS/A.W00.PURAN.USD
+2025-05-25 18:58:19,443 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PURAN.USD
+2025-05-25 18:58:20,792 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PURAN, UNIT_MEASURE=USD
+2025-05-25 18:58:20,808 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PURAN.USD.
+2025-05-25 18:58:20,808 - imf_data_fetcher - INFO - (200/220) Attempting to fetch: CompactData/PCPS/M.W00.PURAN.USD
+2025-05-25 18:58:20,808 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PURAN.USD
+2025-05-25 18:58:22,195 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PURAN, UNIT_MEASURE=USD
+2025-05-25 18:58:22,230 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PURAN.USD.
+2025-05-25 18:58:22,230 - imf_data_fetcher - INFO - (201/220) Attempting to fetch: CompactData/PCPS/A.W00.PUREA.USD
+2025-05-25 18:58:22,231 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PUREA.USD
+2025-05-25 18:58:23,571 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PUREA, UNIT_MEASURE=USD
+2025-05-25 18:58:23,581 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PUREA.USD.
+2025-05-25 18:58:23,581 - imf_data_fetcher - INFO - (202/220) Attempting to fetch: CompactData/PCPS/M.W00.PUREA.USD
+2025-05-25 18:58:23,582 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PUREA.USD
+2025-05-25 18:58:24,937 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PUREA, UNIT_MEASURE=USD
+2025-05-25 18:58:24,969 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PUREA.USD.
+2025-05-25 18:58:24,970 - imf_data_fetcher - INFO - (203/220) Attempting to fetch: CompactData/PCPS/A.W00.PVANPENT.USD
+2025-05-25 18:58:24,970 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PVANPENT.USD
+2025-05-25 18:58:26,359 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PVANPENT, UNIT_MEASURE=USD
+2025-05-25 18:58:26,369 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PVANPENT.USD.
+2025-05-25 18:58:26,370 - imf_data_fetcher - INFO - (204/220) Attempting to fetch: CompactData/PCPS/M.W00.PVANPENT.USD
+2025-05-25 18:58:26,370 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PVANPENT.USD
+2025-05-25 18:58:27,725 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PVANPENT, UNIT_MEASURE=USD
+2025-05-25 18:58:27,745 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PVANPENT.USD.
+2025-05-25 18:58:27,745 - imf_data_fetcher - INFO - (205/220) Attempting to fetch: CompactData/PCPS/A.W00.PVOIL.IX
+2025-05-25 18:58:27,746 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PVOIL.IX
+2025-05-25 18:58:29,096 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PVOIL, UNIT_MEASURE=IX
+2025-05-25 18:58:29,106 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PVOIL.IX.
+2025-05-25 18:58:29,107 - imf_data_fetcher - INFO - (206/220) Attempting to fetch: CompactData/PCPS/M.W00.PVOIL.IX
+2025-05-25 18:58:29,107 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PVOIL.IX
+2025-05-25 18:58:30,496 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PVOIL, UNIT_MEASURE=IX
+2025-05-25 18:58:30,528 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PVOIL.IX.
+2025-05-25 18:58:30,529 - imf_data_fetcher - INFO - (207/220) Attempting to fetch: CompactData/PCPS/A.W00.PTOMATO.USD
+2025-05-25 18:58:30,529 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PTOMATO.USD
+2025-05-25 18:58:31,905 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PTOMATO, UNIT_MEASURE=USD
+2025-05-25 18:58:31,921 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PTOMATO.USD.
+2025-05-25 18:58:31,922 - imf_data_fetcher - INFO - (208/220) Attempting to fetch: CompactData/PCPS/M.W00.PTOMATO.USD
+2025-05-25 18:58:31,922 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PTOMATO.USD
+2025-05-25 18:58:33,305 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PTOMATO, UNIT_MEASURE=USD
+2025-05-25 18:58:33,338 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PTOMATO.USD.
+2025-05-25 18:58:33,339 - imf_data_fetcher - INFO - (209/220) Attempting to fetch: CompactData/PCPS/A.W00.PWHEAMT.USD
+2025-05-25 18:58:33,339 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PWHEAMT.USD
+2025-05-25 18:58:34,681 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PWHEAMT, UNIT_MEASURE=USD
+2025-05-25 18:58:34,693 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PWHEAMT.USD.
+2025-05-25 18:58:34,693 - imf_data_fetcher - INFO - (210/220) Attempting to fetch: CompactData/PCPS/M.W00.PWHEAMT.USD
+2025-05-25 18:58:34,694 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PWHEAMT.USD
+2025-05-25 18:58:36,087 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PWHEAMT, UNIT_MEASURE=USD
+2025-05-25 18:58:36,116 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PWHEAMT.USD.
+2025-05-25 18:58:36,117 - imf_data_fetcher - INFO - (211/220) Attempting to fetch: CompactData/PCPS/A.W00.PWOOL.IX
+2025-05-25 18:58:36,117 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PWOOL.IX
+2025-05-25 18:58:37,487 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PWOOL, UNIT_MEASURE=IX
+2025-05-25 18:58:37,498 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PWOOL.IX.
+2025-05-25 18:58:37,499 - imf_data_fetcher - INFO - (212/220) Attempting to fetch: CompactData/PCPS/M.W00.PWOOL.IX
+2025-05-25 18:58:37,499 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PWOOL.IX
+2025-05-25 18:58:38,888 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PWOOL, UNIT_MEASURE=IX
+2025-05-25 18:58:38,918 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PWOOL.IX.
+2025-05-25 18:58:38,918 - imf_data_fetcher - INFO - (213/220) Attempting to fetch: CompactData/PCPS/A.W00.PWOOLC.USD
+2025-05-25 18:58:38,919 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PWOOLC.USD
+2025-05-25 18:58:40,315 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PWOOLC, UNIT_MEASURE=USD
+2025-05-25 18:58:40,326 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PWOOLC.USD.
+2025-05-25 18:58:40,327 - imf_data_fetcher - INFO - (214/220) Attempting to fetch: CompactData/PCPS/M.W00.PWOOLC.USD
+2025-05-25 18:58:40,327 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PWOOLC.USD
+2025-05-25 18:58:41,734 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PWOOLC, UNIT_MEASURE=USD
+2025-05-25 18:58:41,765 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PWOOLC.USD.
+2025-05-25 18:58:41,766 - imf_data_fetcher - INFO - (215/220) Attempting to fetch: CompactData/PCPS/A.W00.PWOOLF.USD
+2025-05-25 18:58:41,766 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PWOOLF.USD
+2025-05-25 18:58:43,125 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PWOOLF, UNIT_MEASURE=USD
+2025-05-25 18:58:43,136 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PWOOLF.USD.
+2025-05-25 18:58:43,136 - imf_data_fetcher - INFO - (216/220) Attempting to fetch: CompactData/PCPS/M.W00.PWOOLF.USD
+2025-05-25 18:58:43,137 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PWOOLF.USD
+2025-05-25 18:58:44,495 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PWOOLF, UNIT_MEASURE=USD
+2025-05-25 18:58:44,524 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PWOOLF.USD.
+2025-05-25 18:58:44,525 - imf_data_fetcher - INFO - (217/220) Attempting to fetch: CompactData/PCPS/A.W00.POILWTI.USD
+2025-05-25 18:58:44,525 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.POILWTI.USD
+2025-05-25 18:58:45,893 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=POILWTI, UNIT_MEASURE=USD
+2025-05-25 18:58:45,905 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.POILWTI.USD.
+2025-05-25 18:58:45,906 - imf_data_fetcher - INFO - (218/220) Attempting to fetch: CompactData/PCPS/M.W00.POILWTI.USD
+2025-05-25 18:58:45,906 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.POILWTI.USD
+2025-05-25 18:58:47,250 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=POILWTI, UNIT_MEASURE=USD
+2025-05-25 18:58:47,281 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.POILWTI.USD.
+2025-05-25 18:58:47,281 - imf_data_fetcher - INFO - (219/220) Attempting to fetch: CompactData/PCPS/A.W00.PZINC.USD
+2025-05-25 18:58:47,281 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/A.W00.PZINC.USD
+2025-05-25 18:58:48,647 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/A, REF_AREA=W00, COMMODITY=PZINC, UNIT_MEASURE=USD
+2025-05-25 18:58:48,658 - imf_data_fetcher - INFO - No new or changed records to save for series A.W00.PZINC.USD.
+2025-05-25 18:58:48,658 - imf_data_fetcher - INFO - (220/220) Attempting to fetch: CompactData/PCPS/M.W00.PZINC.USD
+2025-05-25 18:58:48,658 - imf_data_fetcher - INFO - Requesting URL: http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/PCPS/M.W00.PZINC.USD
+2025-05-25 18:58:50,036 - imf_data_fetcher - INFO - Successfully processed data for series: FREQ=CompactData/PCPS/M, REF_AREA=W00, COMMODITY=PZINC, UNIT_MEASURE=USD
+2025-05-25 18:58:50,064 - imf_data_fetcher - INFO - No new or changed records to save for series M.W00.PZINC.USD.
+2025-05-25 18:58:50,064 - imf_data_fetcher - INFO - --- Session Summary ---
+2025-05-25 18:58:50,065 - imf_data_fetcher - INFO - Total new/updated observation records written to database in this session: 0
+2025-05-25 18:58:50,066 - imf_data_fetcher - INFO - Database connection closed.
+2025-05-25 18:58:50,066 - imf_data_fetcher - INFO - Script finished.
