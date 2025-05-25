@@ -200,38 +200,26 @@ def main():
                 'indicator1_description': desc1_cleaned,
                 'indicator2_code': indicator_code2,
                 'indicator2_description': desc2_cleaned,
-                'timeframe_length_months': FIXED_WINDOW_SIZE,
-                'correlation': correlation if not pd.isna(correlation) else None,
-                'actual_common_months_in_window': len(current_window_df),
-                'analysis_window_start': window_start_date_period.strftime('%Y-%m'),
-                'analysis_window_end': window_end_date_period.strftime('%Y-%m')
+                'analysis_window_start': window_start_date_period.strftime('%Y-%m') if window_start_date_period else 'N/A',
+                'analysis_window_end': window_end_date_period.strftime('%Y-%m') if window_end_date_period else 'N/A',
+                'window_size_months': FIXED_WINDOW_SIZE,
+                'common_data_points_in_window': len(current_window_df),
+                'correlation': round(correlation, 4) if pd.notnull(correlation) else 'N/A'
             })
-            
-            if (i + 1) % 50 == 0 or (i + 1) == num_possible_windows:
-                 print(f"  Calculated for rolling window {i + 1}/{num_possible_windows} (Ending: {window_end_date_period.strftime('%Y-%m')})...")
-
-        if not correlation_results:
-            print(f"\nNo correlation results generated. Please check data.")
-            return
 
         results_df = pd.DataFrame(correlation_results)
-        results_df.to_csv(csv_output_filename, index=False)
-        print(f"\n--- CSV Generation Complete ---")
-        print(f"True rolling {FIXED_WINDOW_SIZE}-month correlation analysis saved to: {csv_output_filename}")
-        print(f"CSV contains {len(results_df)} rows.")
 
-        # Generate and save the plot
-        print(f"\nGenerating plot...")
-        plot_correlation_data(results_df, indicator_code1, indicator_code2, FIXED_WINDOW_SIZE, plot_output_filename)
-
-        print(f"\n--- Analysis and Plotting Complete ---")
+        if not results_df.empty:
+            results_df.to_csv(csv_output_filename, index=False)
+            print(f"Correlation results saved to: {csv_output_filename}")
+            
+            # Plot the data
+            plot_correlation_data(results_df, indicator_code1, indicator_code2, FIXED_WINDOW_SIZE, plot_output_filename)
+        else:
+            print("No correlation results to save or plot.")
 
     except sqlite3.Error as e:
-        print(f"A database error occurred: {e}")
-    except IOError as e: # Covers issues with CSV or plot file writing
-        print(f"An I/O error occurred (e.g., writing CSV or plot file): {e}")
-    except ImportError:
-        print("Error: matplotlib library not found. Please install it by running: pip install matplotlib")     
+        print(f"SQLite error: {e}")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         import traceback
@@ -242,4 +230,4 @@ def main():
             print("Database connection closed.")
 
 if __name__ == "__main__":
-    main() 
+    main()
