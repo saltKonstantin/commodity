@@ -295,6 +295,17 @@ def process_data(json_data, series_key_identifier, logger): # Added logger
 
 # --- Main Execution ---
 if __name__ == "__main__":
+    # Ensure the database directory exists before setting up logging or DB
+    db_dir = os.path.dirname(DB_FILE) # DB_FILE includes 'database' path
+    if db_dir and not os.path.exists(db_dir):
+        try:
+            os.makedirs(db_dir)
+            # No logger available yet, so print to console
+            print(f"Created directory for database and logs: {db_dir}")
+        except OSError as e:
+            print(f"Error creating directory {db_dir}: {e}. Please create it manually. Exiting.")
+            exit()
+
     # Setup logging
     logger = logging.getLogger("imf_data_fetcher")
     logger.setLevel(logging.INFO)
